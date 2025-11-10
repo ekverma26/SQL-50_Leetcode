@@ -6,7 +6,7 @@ from Accounts
 union all 
 select 
 'Average Salary' as category, 
-count(case when income in (20000,50000) then 1 end) as accounts_count
+count(case when income between 20000 and 50000 then 1 end) as accounts_count
 from Accounts
 union all 
 select 
