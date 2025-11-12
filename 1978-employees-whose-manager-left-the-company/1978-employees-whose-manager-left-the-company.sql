@@ -9,5 +9,5 @@ with cte as(
 )
 
 select e_id as employee_id 
-from cte where salary <=30000 and m_id1 is not null and m_id2 is null 
+from cte where salary <30000 and m_id1 is not null and m_id2 is null 
 order by e_id
